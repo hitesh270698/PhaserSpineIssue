@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "cssnano": "^5.0.8",
+    "postcss": "^8.3.8"
+  },
+  "dependencies": {
+    "matter": "^0.2.0",
+    "phaser": "^3.55.2",
+    "phaser3-rex-plugins": "^1.1.61"
+  }
+}

@@ -1,0 +1,174 @@
+{
+"skeleton": {
+	"hash": "iKRpZ5SW5CD9J4SrOF768nhWFMk",
+	"spine": "3.8.99",
+	"x": -135.04,
+	"y": -13.46,
+	"width": 287,
+	"height": 111,
+	"images": "./images/",
+	"audio": "F:/Trusha/1. TimeLoop/11 Kansas/UI"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "Button_Main", "parent": "root", "color": "c40000ff" },
+	{ "name": "Button", "parent": "Button_Main", "x": 3.9, "y": 44.79, "color": "c40000ff" },
+	{ "name": "Strips", "parent": "Button", "x": 23.01, "y": 2.28, "color": "c40000ff" },
+	{ "name": "Popup/new frame", "parent": "root", "y": 193.22 },
+	{ "name": "Stage", "parent": "root", "length": 61.62, "rotation": 89.65 }
+],
+"slots": [
+	{ "name": "Outer Rect", "bone": "Button", "attachment": "Outer Rect" },
+	{ "name": "Inner rect", "bone": "Button", "attachment": "Inner rect" },
+	{ "name": "Button", "bone": "Button", "dark": "000000", "attachment": "Button" },
+	{ "name": "Button_Mask", "bone": "Button", "attachment": "Button_Mask" },
+	{ "name": "Strips", "bone": "Strips", "attachment": "Strips", "blend": "screen" },
+	{ "name": "Frame_Path", "bone": "root", "attachment": "Frame_Path" },
+	{ "name": "Popup/new frame", "bone": "Popup/new frame", "attachment": "new frame" },
+	{ "name": "Popup/new frame2", "bone": "Popup/new frame", "attachment": "Popup/new frame2" },
+	{ "name": "Stage", "bone": "Stage", "attachment": "Stage" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Button_Mask": {
+				"Button_Mask": {
+					"type": "clipping",
+					"end": "Strips",
+					"vertexCount": 6,
+					"vertices": [ -77.6, 31.59, 72.51, 31.74, 88.82, 16.56, 88.91, -33.25, -94.3, -33.1, -94.23, 16.3 ],
+					"color": "ce3a3aff"
+				}
+			},
+			"Frame_Path": {
+				"Frame_Path": {
+					"type": "path",
+					"closed": true,
+					"lengths": [ 674.93, 992.88, 1667.51, 1986.02 ],
+					"vertexCount": 12,
+					"vertices": [ -337.51, 370.38, -337.24, 389.57, -322.15, 389.64, 326.46, 389.63, 337.69, 389.79, 337.79, 384.01, 337.76, 112.59, 337.44, 71.84, 296.66, 71.72, -147.06, 70.96, -337.18, 71.06, -337.72, 85.56 ]
+				}
+			}
+		}
+	},
+	{
+		"name": "Button_Big",
+		"attachments": {
+			"Button": {
+				"Button": { "name": "Button/Button", "x": -2.76, "y": -0.66, "width": 185, "height": 67 }
+			},
+			"Inner rect": {
+				"Inner rect": { "name": "Button/Inner rect", "x": -2.76, "y": -0.66, "width": 193, "height": 73 }
+			},
+			"Outer Rect": {
+				"Outer Rect": { "name": "Button/Outer Rect", "x": -3.26, "y": -1.16, "width": 210, "height": 92 }
+			},
+			"Strips": {
+				"Strips": { "name": "Button/Strips", "x": -2.77, "y": 4.06, "width": 309, "height": 139 }
+			}
+		}
+	},
+	{
+		"name": "Popup_Size_1",
+		"attachments": {
+			"Popup/new frame": {
+				"new frame": { "name": "Popup/Popup size 1", "y": 22.86, "width": 541, "height": 458 }
+			}
+		}
+	},
+	{
+		"name": "Popup_Size_2",
+		"attachments": {
+			"Popup/new frame": {
+				"new frame": { "name": "Popup/Popup size 2", "y": -12.95, "width": 717, "height": 387 }
+			}
+		}
+	},
+	{
+		"name": "Stage",
+		"attachments": {
+			"Stage": {
+				"Stage": { "x": 42.09, "y": -8.2, "rotation": -89.65, "width": 287, "height": 111 }
+			}
+		}
+	}
+],
+"animations": {
+	"Button_Big_Idle": {
+		"slots": {
+			"Button": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "171510" },
+					{ "time": 0.4333, "light": "f4c9ffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "ffffffff", "dark": "171510" }
+				]
+			}
+		},
+		"bones": {
+			"Strips": {
+				"rotate": [
+					{ "angle": 1.2 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.8333, "x": -42.06 }
+				]
+			}
+		}
+	},
+	"Button_Big_Pressed": {
+		"slots": {
+			"Button": {
+				"twoColor": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "eb6dffff", "dark": "030302" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "ffffffff", "dark": "171510" }
+				]
+			}
+		},
+		"bones": {
+			"Button": {
+				"scale": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.1333, "x": 1.042, "y": 1.042, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2667, "x": 0.835, "y": 0.835, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.4 }
+				]
+			},
+			"Strips": {
+				"rotate": [
+					{ "angle": 1.2 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.8333, "x": -42.06 }
+				]
+			}
+		}
+	},
+	"Popup_Open": {
+		"bones": {
+			"Popup/new frame": {
+				"scale": [
+					{ "x": 0, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2667, "x": 1.052, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3667 }
+				]
+			}
+		}
+	},
+	"Stage_Idle": {
+		"slots": {
+			"Stage": {
+				"color": [
+					{ "color": "ffffffff", "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.3333, "color": "ffc5c5ff", "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.6667, "color": "ffffffff" }
+				]
+			}
+		}
+	}
+}
+}

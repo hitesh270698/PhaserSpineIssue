@@ -1,0 +1,55 @@
+
+UI.png
+size: 720,960
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Button/Button
+  rotate: true
+  xy: 460, 77
+  size: 183, 65
+  orig: 185, 67
+  offset: 1, 1
+  index: -1
+Button/Inner rect
+  rotate: false
+  xy: 460, 2
+  size: 191, 71
+  orig: 193, 73
+  offset: 1, 1
+  index: -1
+Button/Outer Rect
+  rotate: true
+  xy: 598, 75
+  size: 207, 90
+  orig: 210, 92
+  offset: 2, 1
+  index: -1
+Button/Strips
+  rotate: true
+  xy: 460, 262
+  size: 306, 136
+  orig: 309, 139
+  offset: 1, 1
+  index: -1
+Popup/Popup size 1
+  rotate: true
+  xy: 2, 29
+  size: 539, 456
+  orig: 541, 458
+  offset: 1, 1
+  index: -1
+Popup/Popup size 2
+  rotate: false
+  xy: 2, 570
+  size: 715, 385
+  orig: 717, 387
+  offset: 1, 1
+  index: -1
+Stage
+  rotate: true
+  xy: 598, 284
+  size: 284, 109
+  orig: 287, 111
+  offset: 1, 1
+  index: -1
