@@ -16,12 +16,6 @@ export class SecondScene extends Phaser.Scene {
         });
     }
 
-    preload(){
-        if(this.cache.json.exists("Boy")){
-            this.cache.json.remove("Boy");
-        }
-    }
-
     create() {
         var boy =  this.add.spine(500, 700, "Boy", "idle", true);
         var skin = boy.skeletonData.findSkin("Default");
